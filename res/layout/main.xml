@@ -2,11 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" android:weightSum="1.5">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+    <EditText
+        android:id="@+id/setloc_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".65" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/setloc_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".6"
+        android:text="Set Location" android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/profiles_button"
+        android:layout_height="match_parent"
+        android:text="Profiles" android:layout_weight=".6" android:layout_width="match_parent" android:textSize="30sp"/>
 
 </LinearLayout>
